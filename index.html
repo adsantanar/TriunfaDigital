@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibrosGanadores.com - Los eBooks Más Vendidos para Transformar tu Vida</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
+        .header { background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%); color: white; padding: 50px 20px; text-align: center; }
+        .product-card { border: 1px solid #e1e1e1; border-radius: 10px; padding: 25px; margin: 15px 0; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .cta-button { background: #ff6b35; color: white; padding: 15px 30px; border-radius: 5px; font-weight: bold; display: inline-block; text-decoration: none; transition: all 0.3s; }
+        .cta-button:hover { background: #ff8c42; transform: translateY(-3px); }
+        .testimonial { background: #f9f9f9; padding: 20px; border-left: 4px solid #6e48aa; margin: 20px 0; }
+        .bonus-section { background: #fff8e1; padding: 30px; text-align: center; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <!-- Hero Section (AIDA: Atención, Interés) -->
+    <div class="header">
+        <h1>🚀 Los <span style="color: #ffd700;">Libros Digitales</span> que Están Cambiando Vidas en 2024</h1>
+        <p><i>"Descubre los 10 eBooks más vendidos que expertos y emprendedores usan para generar ingresos, mejorar su salud y dominar habilidades clave..."</i></p>
+        <a href="#productos" class="cta-button">VER LOS LIBROS AHORA</a>
+    </div>
+
+    <!-- Problema + Solución (PAS: Problema, Agitación, Solución) -->
+    <div style="padding: 40px 20px; text-align: center;">
+        <h2>¿Te Has Sentido Así?</h2>
+        <p>❌ <strong>Frustrado</strong> por no avanzar en tus metas financieras...</p>
+        <p>❌ <strong>Confundido</strong> con tanta información contradictoria en internet...</p>
+        <p>❌ <strong>Sin tiempo</strong> para aprender lo que realmente funciona...</p>
+        <br>
+        <h3 style="color: #6e48aa;">¡La solución está aquí!</h3>
+        <p>Estos libros condensan años de experiencia en <strong>guías paso a paso</strong> que cualquiera puede aplicar.</p>
+    </div>
+
+    <!-- Productos (Beneficios Emocionales) -->
+    <div id="productos" style="padding: 20px; max-width: 1000px; margin: 0 auto;">
+        <h2 style="text-align: center; margin-bottom: 30px;">🏆 Nuestra Selección Exclusiva</h2>
+
+        <!-- Producto 1 -->
+        <div class="product-card">
+            <h3>Forex God Strategy</h3>
+            <p><strong>¿Qué lograrás?</strong> Domina el trading de Forex <u>incluso si nunca has operado</u>.</p>
+            <p><strong>Beneficio clave:</strong> "Deja tu trabajo en 6 meses con este método de 1 hora al día"</p>
+            <p>🔥 <strong>4,200+ copias vendidas</strong> | ⭐⭐⭐⭐⭐ (4.9/5)</p>
+            <p style="font-size: 24px; color: #ff6b35;"><del>$197</del> <strong>$97</strong></p>
+            <a href="[LINK_AFILIADO_FOREX]" class="cta-button">QUIERO APRENDER AHORA</a>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card">
+            <h3>Keto Desserts Cookbook</h3>
+            <p><strong>¿Qué lograrás?</strong> Pierde peso <u>sin dejar los postres</u> con 50 recetas científicas.</p>
+            <p><strong>Beneficio clave:</strong> "Baja 2 tallas en 30 días mientras comes chocolate"</p>
+            <p>🔥 <strong>8,000+ copias vendidas</strong> | ⭐⭐⭐⭐⭐ (4.8/5)</p>
+            <p style="font-size: 24px; color: #ff6b35;"><del>$67</del> <strong>$37</strong></p>
+            <a href="[LINK_AFILIADO_KETO]" class="cta-button">TRANSFORMA TU CUERPO</a>
+        </div>
+
+        <!-- ... (Repetir estructura para otros 8 productos) ... -->
+    </div>
+
+    <!-- Testimonios (Social Proof) -->
+    <div style="padding: 40px 20px; background: #f5f5f5;">
+        <h2 style="text-align: center;">📢 Lo Que Dicen Nuestros Lectores</h2>
+        <div class="testimonial">
+            <p><i>"El libro de Forex me enseñó a ganar $3,000/mes desde casa. ¡Nunca pensé que sería posible!"</i></p>
+            <p><strong>- Carlos M., México</strong> (comprador verificada)</p>
+        </div>
+        <div class="testimonial">
+            <p><i>"Las recetas Keto son tan fáciles que hasta mi esposo las hace. ¡Perdí 15 kilos en 3 meses!"</i></p>
+            <p><strong>- Ana L., España</strong></p>
+        </div>
+    </div>
+
+    <!-- Oferta Irresistible (Urgencia) -->
+    <div class="bonus-section">
+        <h2>⚠️ ¡ATENCIÓN! OFERTA POR TIEMPO LIMITADO</h2>
+        <p>Descarga <strong>GRATIS</strong> nuestro reporte <i>"Los 3 Secretos de los Libros Más Vendidos"</i> al comprar cualquier libro hoy.</p>
+        <p>⏳ Solo hasta: <span id="countdown" style="color: red; font-weight: bold;"></span></p>
+        <a href="#productos" class="cta-button">APROVECHA LA OFERTA</a>
+    </div>
+
+    <!-- Countdown Script -->
+    <script>
+        // Countdown de 24 horas
+        let countdownDate = new Date();
+        countdownDate.setHours(countdownDate.getHours() + 24);
+        
+        function updateCountdown() {
+            let now = new Date();
+            let diff = countdownDate - now;
+            
+            let hours = Math.floor(diff / (1000 * 60 * 60));
+            let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            
+            document.getElementById('countdown').innerHTML = hours + "h " + minutes + "m";
+        }
+        
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
